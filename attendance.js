@@ -24,6 +24,12 @@ const students = [
   
   let currentIndex = 0;
   const attendance = [];
+
+students.forEach(student => {
+    const img = document.createElement('img');
+    img.src = student.image;
+    img.alt = student.mane;
+  })
   
   
   const studentImage = document.getElementById('student-image');
